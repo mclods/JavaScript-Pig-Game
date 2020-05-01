@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Cutive' rel='stylesheet'>
+        <link type="text/css" rel="stylesheet" href="style.css">
+
+        <!-- Custom Favicon -->
+        <link rel="icon" href="https://img.icons8.com/flat_round/64/000000/pig--v1.png">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><ion-icon name="add-circle-outline"></ion-icon>New game</button>
+            <button class="btn-roll"><ion-icon name="sync-outline"></ion-icon>Roll dice</button>
+            <button class="btn-hold"><ion-icon name="download-outline"></ion-icon>Hold</button>
+            
+            <input type="text" placeholder="Final Score" class="final-score">
+            
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
+        </div>
+        
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>
